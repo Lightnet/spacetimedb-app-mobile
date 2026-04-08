@@ -12,7 +12,17 @@ export * from './views/view_user'
 export * from './reducers/reducer_auth';
 export * from './reducers/reducer_test'; // export all functions
 export * from './reducers/reducer_input'; // export all functions
-import { reset_entity_player } from './reducers/reducer_entity';
+import { 
+  reset_entity_player,
+  create_entity,
+  delete_entity,
+  add_entity_transform2d,
+  remove_entity_transform2d,
+  add_entity_box2d,
+  add_entity_circle2d,
+  remove_entity_body2d,
+
+} from './reducers/reducer_entity';
 export {
   // spacetimedb predefine
   init,
@@ -27,6 +37,13 @@ export {
   // test_foo
   // 
   reset_entity_player,
+  create_entity,
+  delete_entity,
+  add_entity_transform2d,
+  remove_entity_transform2d,
+  add_entity_box2d,
+  add_entity_circle2d,
+  remove_entity_body2d,
 }
 
 export default spacetimedb;

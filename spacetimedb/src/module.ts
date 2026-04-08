@@ -5,7 +5,7 @@ import { ScheduleAt } from 'spacetimedb';
 import { schema, table, t, SenderError  } from 'spacetimedb/server';
 import { sessions } from './tables/table_session';
 import { users, userAuth } from './tables/table_user';
-import { entity, transform2d } from './tables/table_entity';
+import { body2d, entity, transform2d } from './tables/table_entity';
 import { userInput } from './tables/table_input';
 //-----------------------------------------------
 // 
@@ -31,6 +31,7 @@ const spacetimedb = schema({
   userInput,
   entity,
   transform2d,
+  body2d,
   simulateInput,
 });
 
